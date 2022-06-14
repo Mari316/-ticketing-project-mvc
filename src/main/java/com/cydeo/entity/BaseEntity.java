@@ -1,4 +1,4 @@
-package com.cydeo.entity;
+package com.cydeo.entity;// Entity for DB
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class BaseEntity {
+public class BaseEntity {  //Whenever we have in entity we use in DB and not gonna show on UI, if we wanna show we will use Mappers
     private Long id;
     private LocalDateTime insertDateTime;
     private Long insertUserId;

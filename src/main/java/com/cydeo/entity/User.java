@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@NoArgsConstructor// we should add this because we are extending another class
+@NoArgsConstructor// we should add this because we are extending another class and do constructor manually
 @Data  // we DO NOT adding @ALLARGS because we are extending another class, Lombok not creating cons including Super class so
-//we have to create constructor my ourselves
+//we have to create constructor by ourselves
 public class User extends BaseEntity {
 
     private String firstName;

@@ -14,7 +14,8 @@ public class UserController {
     @GetMapping("/create")
     public String createUser(Model model){
 
-        model.addAttribute("user", new UserDTO());
+        model.addAttribute("user", new UserDTO());//view-user.create-bind fields in view (class min 56)
+        // all fields in UserDTO bound in view
 
 
 

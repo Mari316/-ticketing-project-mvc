@@ -15,7 +15,7 @@ public class UserDTO {
     private String password;
     private boolean enabled;
     private String phone;
-    private RoleDTO role;
+    private RoleDTO role; // in view we are iterating this in order to choose from dropdown
     private Gender gender;
 
 }

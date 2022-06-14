@@ -99,8 +99,8 @@
                                                 <div class="form-group">
                                                     <label>Choose a Role</label>
                                                     <select name="role" th:field="*{role}" class="custom-select">
-                                                        <option th:value="''" th:text="Select"></option>
-                                                        <option th:each="role : ${}"></option>
+                                                        <option th:value="''" th:text="Select"></option> <!-- we have it to see Select as default option  -->
+                                                        <option th:each="role : ${}"></option> <!-- iteration, for each, need to provide list here -->
                                                     </select>
                                                 </div>
                                             </div>
