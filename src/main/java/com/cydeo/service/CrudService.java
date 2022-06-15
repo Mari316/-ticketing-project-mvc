@@ -6,10 +6,10 @@ public interface CrudService<T, ID> { // need to pass T and unique identifier JA
     // Here all actions from UI and any Service can use it
     // because we have repeated steps in both services (Role and USer), we are using generics T-any object can be
 
-    T save(T object); // accepting obj, returning obj
+    T save(T object); // accepting obj, returning obj (T obj because we dont know exactly what obj)
     List<T> findAll(); // just returns list of obj
     T findByID(ID id); // returning Obj
-    void delete(T object);// just delete do not return anything
+
     void deleteById(ID id); // delete based on ID
 
 }

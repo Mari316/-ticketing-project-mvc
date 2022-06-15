@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-public class UserDTO {
+@Data                     // always bring to View model
+public class UserDTO { // we need this obj to bind in the view and then pass it to controller
     private String firstName;
     private String lastName;
     private String userName;
